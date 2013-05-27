@@ -6,7 +6,7 @@ You often need user to input some kind of formatted data:
 - date and time (and UIDatePicker is not really good enough for birthdays or expiration dates)
 - sum with thousand separators
 - phone number
-- email
+- email address
 - and many others
 
 UITextField doesn't really limit user input, so you need to do some validation afterwards, which is really annoying for multiple similar fields.
@@ -23,7 +23,7 @@ iOS5 or later, ARC
 3. Drag UITextField onto your view in the interface builder.
 4. Set required properties as you wish.
 5. Set custom class `WTReTextField` for it, and link with corresponding property of your view controller.
-6. Set pattern for your field in `- (void)viewDidLoad`.
+6. Set pattern for your field in `-(void)viewDidLoad`.
 
 ## Regular Expression Syntax
 
@@ -32,10 +32,10 @@ This control implements a subset of default regular expression grammar.
 There are a few limitations:
 - Zero-width assertions (lookaheads, lookbehinds) and balancing groups are not implemented.
 - Pattern should start with `^` and end with `$`. Starts/ends in the middle of pattern (like `(,|$)+`) are not supported.
-- Named groups are supported, but theirs names are not really used.
+- Named groups are supported, but their names are not really used.
 - Non-capturing groups with single literal (e.g. `(?: )` for space) are considered _dividers_ and are inserted automatically if omitted while typing.
 - Comments and other junk are not supported.
-- Pattern is treated as single line, so `.` matches any character.
+- Pattern is treated as single line, so `.` matches any character including `\n`.
 
 ## License
 MIT License
