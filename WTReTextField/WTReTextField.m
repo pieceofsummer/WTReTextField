@@ -34,13 +34,16 @@
     return self;
 }
 
-- (void)awakeFromNib
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    [super awakeFromNib];
-    
-    _lastAcceptedValue = nil;
-    _parser = nil;
-    [self addTarget:self action:@selector(formatInput:) forControlEvents:UIControlEventEditingChanged];
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+        _lastAcceptedValue = nil;
+        _parser = nil;
+        [self addTarget:self action:@selector(formatInput:) forControlEvents:UIControlEventEditingChanged];
+    }
+    return self;
 }
 
 - (void)dealloc
