@@ -18,18 +18,18 @@
 		24A7E6331735E60400441C51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A7E6321735E60400441C51 /* Default-568h@2x.png */; };
 		24A7E6361735E60400441C51 /* WTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7E6351735E60400441C51 /* WTViewController.m */; };
 		24A7E6391735E60400441C51 /* WTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A7E6371735E60400441C51 /* WTViewController_iPhone.xib */; };
-		24A7E63C1735E60400441C51 /* WTViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A7E63A1735E60400441C51 /* WTViewController_iPad.xib */; };
+		24A7E6441735E6B400441C51 /* WTReTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7E6431735E6B400441C51 /* WTReTextField.m */; };
+		24A7E647173D729300441C51 /* WTReParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7E646173D729300441C51 /* WTReParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24A7E6191735E60400441C51 /* testinput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testinput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A7E6191735E60400441C51 /* WTReTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTReTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A7E61C1735E60400441C51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		24A7E61E1735E60400441C51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24A7E6201735E60400441C51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		24A7E6241735E60400441C51 /* testinput-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testinput-Info.plist"; sourceTree = "<group>"; };
+		24A7E6241735E60400441C51 /* WTReTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTReTextField-Info.plist"; sourceTree = "<group>"; };
 		24A7E6261735E60400441C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24A7E6281735E60400441C51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24A7E62A1735E60400441C51 /* testinput-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testinput-Prefix.pch"; sourceTree = "<group>"; };
 		24A7E62B1735E60400441C51 /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
 		24A7E62C1735E60400441C51 /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
 		24A7E62E1735E60400441C51 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -38,7 +38,10 @@
 		24A7E6341735E60400441C51 /* WTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTViewController.h; sourceTree = "<group>"; };
 		24A7E6351735E60400441C51 /* WTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTViewController.m; sourceTree = "<group>"; };
 		24A7E6381735E60400441C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WTViewController_iPhone.xib; sourceTree = "<group>"; };
-		24A7E63B1735E60400441C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WTViewController_iPad.xib; sourceTree = "<group>"; };
+		24A7E6421735E6B400441C51 /* WTReTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReTextField.h; sourceTree = "<group>"; };
+		24A7E6431735E6B400441C51 /* WTReTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReTextField.m; sourceTree = "<group>"; };
+		24A7E645173D729300441C51 /* WTReParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTReParser.h; sourceTree = "<group>"; };
+		24A7E646173D729300441C51 /* WTReParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTReParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2416E7BD17530F6E00C52BCF /* WTReTextField */ = {
+			isa = PBXGroup;
+			children = (
+				24A7E6421735E6B400441C51 /* WTReTextField.h */,
+				24A7E6431735E6B400441C51 /* WTReTextField.m */,
+				24A7E645173D729300441C51 /* WTReParser.h */,
+				24A7E646173D729300441C51 /* WTReParser.m */,
+			);
+			path = WTReTextField;
+			sourceTree = "<group>";
+		};
 		24A7E6101735E60400441C51 = {
 			isa = PBXGroup;
 			children = (
-				24A7E6221735E60400441C51 /* testinput */,
+				2416E7BD17530F6E00C52BCF /* WTReTextField */,
+				24A7E6221735E60400441C51 /* WTReTextField Demo */,
 				24A7E61B1735E60400441C51 /* Frameworks */,
 				24A7E61A1735E60400441C51 /* Products */,
 			);
@@ -67,7 +82,7 @@
 		24A7E61A1735E60400441C51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24A7E6191735E60400441C51 /* testinput.app */,
+				24A7E6191735E60400441C51 /* WTReTextField.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +97,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24A7E6221735E60400441C51 /* testinput */ = {
+		24A7E6221735E60400441C51 /* WTReTextField Demo */ = {
 			isa = PBXGroup;
 			children = (
 				24A7E62B1735E60400441C51 /* WTAppDelegate.h */,
@@ -90,19 +105,17 @@
 				24A7E6341735E60400441C51 /* WTViewController.h */,
 				24A7E6351735E60400441C51 /* WTViewController.m */,
 				24A7E6371735E60400441C51 /* WTViewController_iPhone.xib */,
-				24A7E63A1735E60400441C51 /* WTViewController_iPad.xib */,
 				24A7E6231735E60400441C51 /* Supporting Files */,
 			);
-			path = testinput;
+			path = "WTReTextField Demo";
 			sourceTree = "<group>";
 		};
 		24A7E6231735E60400441C51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				24A7E6241735E60400441C51 /* testinput-Info.plist */,
+				24A7E6241735E60400441C51 /* WTReTextField-Info.plist */,
 				24A7E6251735E60400441C51 /* InfoPlist.strings */,
 				24A7E6281735E60400441C51 /* main.m */,
-				24A7E62A1735E60400441C51 /* testinput-Prefix.pch */,
 				24A7E62E1735E60400441C51 /* Default.png */,
 				24A7E6301735E60400441C51 /* Default@2x.png */,
 				24A7E6321735E60400441C51 /* Default-568h@2x.png */,
@@ -113,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24A7E6181735E60400441C51 /* testinput */ = {
+		24A7E6181735E60400441C51 /* WTReTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24A7E63F1735E60400441C51 /* Build configuration list for PBXNativeTarget "testinput" */;
+			buildConfigurationList = 24A7E63F1735E60400441C51 /* Build configuration list for PBXNativeTarget "WTReTextField" */;
 			buildPhases = (
 				24A7E6151735E60400441C51 /* Sources */,
 				24A7E6161735E60400441C51 /* Frameworks */,
@@ -125,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = testinput;
+			name = WTReTextField;
 			productName = testinput;
-			productReference = 24A7E6191735E60400441C51 /* testinput.app */;
+			productReference = 24A7E6191735E60400441C51 /* WTReTextField.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +153,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Alex Skalozub";
 			};
-			buildConfigurationList = 24A7E6141735E60400441C51 /* Build configuration list for PBXProject "testinput" */;
+			buildConfigurationList = 24A7E6141735E60400441C51 /* Build configuration list for PBXProject "WTReTextField" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -152,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24A7E6181735E60400441C51 /* testinput */,
+				24A7E6181735E60400441C51 /* WTReTextField */,
 			);
 		};
 /* End PBXProject section */
@@ -167,7 +180,6 @@
 				24A7E6311735E60400441C51 /* Default@2x.png in Resources */,
 				24A7E6331735E60400441C51 /* Default-568h@2x.png in Resources */,
 				24A7E6391735E60400441C51 /* WTViewController_iPhone.xib in Resources */,
-				24A7E63C1735E60400441C51 /* WTViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +193,8 @@
 				24A7E6291735E60400441C51 /* main.m in Sources */,
 				24A7E62D1735E60400441C51 /* WTAppDelegate.m in Sources */,
 				24A7E6361735E60400441C51 /* WTViewController.m in Sources */,
+				24A7E6441735E6B400441C51 /* WTReTextField.m in Sources */,
+				24A7E647173D729300441C51 /* WTReParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +215,6 @@
 				24A7E6381735E60400441C51 /* en */,
 			);
 			name = WTViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		24A7E63A1735E60400441C51 /* WTViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24A7E63B1735E60400441C51 /* en */,
-			);
-			name = WTViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -276,9 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testinput/testinput-Prefix.pch";
-				INFOPLIST_FILE = "testinput/testinput-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "WTReTextField Demo/WTReTextField-Info.plist";
+				PRODUCT_NAME = WTReTextField;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -287,9 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testinput/testinput-Prefix.pch";
-				INFOPLIST_FILE = "testinput/testinput-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "WTReTextField Demo/WTReTextField-Info.plist";
+				PRODUCT_NAME = WTReTextField;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -297,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24A7E6141735E60400441C51 /* Build configuration list for PBXProject "testinput" */ = {
+		24A7E6141735E60400441C51 /* Build configuration list for PBXProject "WTReTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24A7E63D1735E60400441C51 /* Debug */,
@@ -306,13 +312,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24A7E63F1735E60400441C51 /* Build configuration list for PBXNativeTarget "testinput" */ = {
+		24A7E63F1735E60400441C51 /* Build configuration list for PBXNativeTarget "WTReTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24A7E6401735E60400441C51 /* Debug */,
 				24A7E6411735E60400441C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
