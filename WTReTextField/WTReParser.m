@@ -521,7 +521,7 @@
     for (NSUInteger i = 0; i < range.length; i++) {
         unichar c = [pattern characterAtIndex:(range.location + i)];
         
-        if (enclosed && i == 0 && c == '~') {
+        if (enclosed && i == 0 && c == '^') {
             negation = YES;
             continue;
         }
@@ -613,6 +613,9 @@
             count++;
         }
     }
+    
+    if (count == 0)
+        [self raiseParserError:@"Invalid character set" atPos:range.location];
     
     if (!negation && count == 1) {
         WTReLiteral *l = [[WTReLiteral alloc] init];
