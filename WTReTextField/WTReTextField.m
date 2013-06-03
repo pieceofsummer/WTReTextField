@@ -78,7 +78,11 @@
             formatted = _lastAcceptedValue;
         else
             _lastAcceptedValue = formatted;
-        textField.text = formatted;
+        NSString *newText = formatted;
+        if (![textField.text isEqualToString:newText]) {
+            textField.text = formatted;
+            [self sendActionsForControlEvents:UIControlEventValueChanged];
+        }
     });
 }
 
