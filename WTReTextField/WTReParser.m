@@ -602,6 +602,8 @@
             if (![alphanum characterIsMember:rangeStart] || ![alphanum characterIsMember:rangeEnd])
                 [self raiseParserError:@"Invalid character range" atPos:(range.location + i - 1)];
             
+            // iOS5 has a bug: things go ugly if range intersects with existing one, so exclude it first
+            [chars removeCharactersInRange:NSMakeRange(rangeStart, rangeEnd - rangeStart + 1)];
             [chars addCharactersInRange:NSMakeRange(rangeStart, rangeEnd - rangeStart + 1)];
             i++;
             count += 2;
