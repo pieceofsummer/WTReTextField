@@ -522,7 +522,7 @@
     for (NSUInteger i = 0; i < range.length; i++) {
         unichar c = [pattern characterAtIndex:(range.location + i)];
         
-        if (enclosed && i == 0 && c == '~') {
+        if (enclosed && i == 0 && c == '^') {
             negation = YES;
             continue;
         }
