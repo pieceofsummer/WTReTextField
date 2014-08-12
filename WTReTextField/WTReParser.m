@@ -944,9 +944,20 @@
     
     if (escape)
         [self raiseParserError:@"Invalid group ending" atPos:(range.location + range.length)];
+
+    NSUInteger endPosForGroup = endPos;
+    if (alternations != nil && _finished && !enclosed)
+    {
+        // root-level alternation not included in parenthesis:
+        // ^aaa|bbb$
+        // need to strip end-of-string node from last group
+        [nodes removeLastObject];
+        // and decrement last alternation length by 1
+        endPosForGroup--;
+    }
     
     WTReGroup *g = [self groupFromNodes:nodes enclosed:enclosed];
-    g.sourceRange = NSMakeRange(range.location + startPos, endPos - startPos);
+    g.sourceRange = NSMakeRange(range.location + startPos, endPosForGroup - startPos);
     g.capturing = enclosed;
     
     if (alternations != nil) {
@@ -974,6 +985,13 @@
         g.sourceRange = a.sourceRange;
         
         a.parent = g;
+        
+        if (_finished && !enclosed)
+        {
+            a.nextSibling = lastnode;
+            lastnode.parent = g;
+            g.children = [NSArray arrayWithObjects:a, lastnode, nil];
+        }
     }
     
     return g;
